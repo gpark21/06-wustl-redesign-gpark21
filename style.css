@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: "future pt", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 25em;
+  display: flex;
+  /*height: auto;*/
+  /*padding: 3% 0% 5% 0%;*/
+  background-image:url(samfoxview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+header::before {
+    content: " ";
+    width: 100%;
+    height: 15em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+}
+
+h1 {
+  font-family: "Goudy Old Style",Garamond,"Big Caslon","Times New Roman",serif;
+  text-transform: capitalize;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  background-color: #6aaf3d;
+  padding: 1% 0%;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  display:block;
+}
+
+nav ul li {
+  display:inline;
+  color: #fff;
+  padding: 0% 0.5%;
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+
+}
+
+main {
+  text-align: center;
+}
+
+#samfoxlogo {
+  width: 50%;
+  height: auto;
+  z-index: 3;
+  /*position: fixed;*/
+}
