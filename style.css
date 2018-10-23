@@ -184,6 +184,7 @@ main {
   background-color: rgba(255, 255, 255, 0.8);
   width: 60%;
   margin: auto;
+  padding-bottom: 10em;
 }
 
 .content:hover {
@@ -236,8 +237,25 @@ iframe {
   margin-top: 12em;
 }
 
-.programs, .community {
+.programs, .community, .apply {
   margin-top: 15em;
+}
+
+#contactinfo {
+  margin-top: 16.5em;
+}
+
+strong {
+  color: #F56424;
+}
+
+#applyinfo {
+  margin-top: 33em;
+}
+
+#applyinfo ul li {
+  font-size: 0.9em;
+  color: #686868;
 }
 
 #communityphoto {
@@ -263,11 +281,13 @@ ol li {
 ol a {
   text-decoration: none;
   color: #635E5E;
+  transition: 0.3s; 
 }
 
 ol a:hover {
   transition: 0.3s;
   color: #6aaf3d;
+  font-style: italic;
 }
 
 h2 {
@@ -296,10 +316,6 @@ p a:hover {
 #form {
   display: block;
   clear:both;
-}
-
-#contactinfo {
-  margin-top: 32em;
 }
 
 #address {
@@ -354,7 +370,6 @@ footer {
   opacity: 0.7;
   background-color: #2bb7ec;
   padding: 2em 0em 2em 0em;
-  margin-top: 6em;
 }
 
 footer p {
