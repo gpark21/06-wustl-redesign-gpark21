@@ -5,7 +5,7 @@ body {
 
 header {
   width: 100%;
-  height: 25em;
+  height: 22em;
   display: flex;
   /*height: auto;*/
   /*padding: 3% 0% 5% 0%;*/
@@ -18,26 +18,110 @@ header {
 header::before {
     content: " ";
     width: 100%;
-    height: 15em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 22em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
     position: absolute;
+    z-index: 0;
 }
 
-h1 {
-  font-family: "Goudy Old Style",Garamond,"Big Caslon","Times New Roman",serif;
-  text-transform: capitalize;
-  font-size: 40px;
-  text-align: center;
-  color: #fff;
+#washulogo {
   z-index: 2;
+  height: 55%;
+  width: auto;
   margin: auto;
 }
 
+#searchbar {
+  position: absolute;
+  z-index: 3;
+  background: transparent;
+  height: 4.2%;
+  width: 12.5%;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 0.5% 1.5%;
+  right: 1%;
+  top: 1%;
+  text-align: left;
+  opacity: 0.7;
+  background-image: url(search.png);
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+#searchbar:focus {
+  opacity: 0.9;
+  transition: 0.3s;
+  background color: rgba(255, 255, 255, 0.9);
+  outline: none;
+  color: #fff;
+}
+
+#menu {
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 1%;
+  left: 1%;
+  padding-top: 0.4%;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #6aaf3d;
+  opacity: 0.9;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  top: 2%;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: 0.4s;
+  display: inline-block;
+  position: absolute;
+}
+
+.dropdown-content ul {
+  list-style: none;
+}
+
+.dropdown-content ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.dropdown-content ul a:hover {
+  transition: 0.4s;
+  color: #000;
+}
+
+.dropdown-content ul li {
+  padding: 6%;
+  text-align: left;
+}
+
 nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   margin: 0;
   background-color: #6aaf3d;
   padding: 1% 0%;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+nav:hover {
+  transition: 0.5s;
+  opacity: 0.9;
 }
 
 nav ul {
@@ -49,17 +133,21 @@ nav ul {
 nav ul li {
   display:inline;
   color: #fff;
-  padding: 0% 0.5%;
+  padding: 0% 6%;
   font-family: Verdana,Geneva,sans-serif;
+  font-size: 1em;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-
+  color: #444444;
+  transition: 0.4s;
+  /*background-color: #6aaf3d;*/
 }
 
 main {
@@ -67,8 +155,129 @@ main {
 }
 
 #samfoxlogo {
-  width: 50%;
+  width: 85%;
   height: auto;
   z-index: 3;
-  /*position: fixed;*/
+  margin: auto;
+  padding-top: 0.2%;
+  margin-bottom: 4em;
+  position: sticky;
+  top: 9.3%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contentbg {
+  background-image: url(background.jpg);
+  /*background-repeat: no-repeat;
+  background-size: auto;*/
+  z-index: -1;
+}
+
+.content {
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  margin: auto;
+}
+
+.content:hover {
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+h1 {
+  font-family: 'Abel',sans-serif;
+  color: #F56424;
+  z-index: 2;
+  margin: auto;
+  font-style: oblique;
+}
+
+iframe {
+  padding: 2% 0% 3% 0%;
+}
+
+.column1, .column2 {
+  float: left;
+}
+
+.column1 {
+  padding-top: 2%;
+  width: 35%;
+  padding-right: 5%;
+  display: inline-block;
+  text-align: left;
+}
+
+.column2 {
+  display: inline-block;
+  width: 55%;
+  text-align: right;
+}
+
+.row:after {
+  content: "";
+  display:table;
+  clear:both;
+}
+
+.about {
+  margin-top: 12em;
+}
+
+.programs, .community {
+  margin-top: 15em;
+}
+
+#communityphoto {
+  width: 90%;
+}
+
+#communitylinks {
+  margin-top: 20em;
+}
+
+ol {
+  list-style: none;
+  font-family: verdana;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+ol li {
+  border-top: 2px solid #635E5E;
+  padding: 0.5%;
+}
+
+ol a {
+  text-decoration: none;
+  color: #635E5E;
+}
+
+ol a:hover {
+  transition: 0.3s;
+  color: #6aaf3d;
+}
+
+h2 {
+  font-family: 'Abel',sans-serif;
+  color: #F56424;
+  text-transform: uppercase;
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 0.9em;
+  color: #686868;
+}
+
+p a{
+  transition: 0.3s;
+  text-decoration: none;
+  color: #6aaf3d;
+}
+
+p a:hover {
+  transition: 0.3s;
+  color: #635E5E;
 }
