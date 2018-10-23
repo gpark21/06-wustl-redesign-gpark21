@@ -12,33 +12,37 @@
 </head>
 <body>
   <header>
-    <img id="washulogo" src="washulogo.png">
+    <img id="washulogo" src="washulogo.png" alt="The logo of Washington University in St. Louis">
   </header>
   <main>
     <div class="dropdown">
       <a href=""><i class="fas fa-bars" id="menu"></i></a>
       <div class="dropdown-content">
         <ul>
-          <li><a href="#aboutlinks">About</a></li>
-          <li><a href="#programlinks">Programs</a></li>
-          <li><a href="#communitylinks">Community</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="#communitylinks">Community</a></li>
+            <li><a href="">Kemper Art Museum</a></li>
+            <li><a href="">Island Press</a></li>
         </ul>
       </div>
     </div>
     <input type="search" id="searchbar" placeholder="Search">
     <nav>
       <ul>
-        <li><a href="">Apply</a></li>
-        <li><a href="">Directory</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Contact</a></li>
+      <li><a href="#aboutlinks">About</a></li>
+      <li><a href="#programlinks">Programs</a></li>
+      <li><a href="#form">Contact</a></li>
+      <li><a href="">Apply</a></li>
       </ul>
     </nav>
     <div class="contentbg">
       <div class="content">
-        <img id="samfoxlogo" src="samfoxlogo.png">
-        <h1>Daring to Make a School Great.</h1>
-        <iframe src="https://player.vimeo.com/video/210773988" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        <a href="#top"><img id="samfoxlogo" src="samfoxlogo.png"></a>
+        <div class="intro">
+          <h1>Daring to Make a School Great.</h1>
+          <iframe src="https://player.vimeo.com/video/210773988" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="row">
           <div class="column1">
             <div class="about" id="aboutlinks">
@@ -72,6 +76,31 @@
                 <li><a href="">Directory</a></li>
               </ol>
             </div>
+            <div class="contact" id="contactinfo">
+              <p id="address">Sam Fox School of Design & Visual Arts<br>
+                Washington University in St. Louis<br>
+                Campus Box 1213<br>
+                One Brookings Drive<br>
+                St. Louis, MO 63130</p>
+              <table>
+                <tr>
+                  <th>Office of the Dean</th>
+                  <td>314.935.9300</td>
+                </tr>
+                <tr>
+                  <th>Office of Student Services</th>
+                  <td>314.935.6500</td>
+                </tr>
+                <tr>
+                  <th>Office of the Director</th>
+                  <td>314.935.7487</td>
+                </tr>
+                <tr>
+                  <th>Director of Graduate Studies</th>
+                  <td>314.935.5884</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="column2">
             <div class="about">
@@ -88,14 +117,25 @@
               <img id="communityphoto" src="http://samfoxschool.wustl.edu/files/imagecache/B_image/page/image/Practices-Students.png">
               <p>The Sam Fox School is, above all else, a vital, world-changing community of artists, architects, designers, curators, and scholars. The people here are always at the heart of what we're doing, from our talented and creative students, to our nationally and internationally distinguished faculty, to our passionate and hard-working staff, to the alumni who leave the School and change the world through their work in a diverse array of fields.</p>
             </div>
+            <div class="contact" id="form">
+                <h2>Contact</h2>
+                <form action="/" method="post">
+                  <p>
+                  <input type="text" name="name" id="name" placeholder="Name" required/><br></p>
+                  <p>
+                  <input type="text" name="email" id="email" placeholder="E-mail" required/></p>
+                  <p>
+                  <textarea id="place" placeholder="Write your message here ..."></textarea><br>
+                  <input type="submit"/></p>
+                </form>
+              </div>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <hr />
-    <p><a href="">Sitemap</a> | <a href="">Contact</a> | <a href="">Employment</a> | <a href="">Subscribe to e-news</a></p>
+    <p><a href="">Sitemap</a> | <a href="">Employment</a> | <a href="">Subscribe to e-news</a></p>
     <p>Grace Park &copy; 2018</p>
   </footer>
 </body>

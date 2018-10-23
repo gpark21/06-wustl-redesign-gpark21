@@ -64,7 +64,7 @@ header::before {
   height: 22px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.6);
-  top: 1%;
+  top: 1.5%;
   left: 1%;
   padding-top: 0.4%;
 }
@@ -75,13 +75,13 @@ header::before {
 
 .dropdown-content {
   display: none;
-  background-color: #6aaf3d;
+  background-color: #2bb7ec;
   opacity: 0.8;
   height: 100%;
   width: 25%;
   left: 0%;
   top: 0%;
-  z-index: 2;
+  z-index: 5;
   transition: 0.4s;
 }
 
@@ -93,6 +93,7 @@ header::before {
 
 .dropdown-content ul {
   list-style: none;
+  margin: 10% 0% 0% 1%;
 }
 
 .dropdown-content ul a {
@@ -106,7 +107,6 @@ header::before {
 .dropdown-content ul a:hover {
   transition: 0.5s;
   text-transform: uppercase;
-  color: #000;
   letter-spacing: 10px;
 }
 
@@ -120,8 +120,8 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  margin: 0;
-  background-color: #6aaf3d;
+  margin: 0% 0% 0.2% 0%;
+  background-color: #2bb7ec;
   padding: 1% 0%;
   opacity: 0.7;
   transition: 0.3s;
@@ -166,11 +166,9 @@ main {
   width: 85%;
   height: auto;
   z-index: 3;
-  margin: auto;
-  padding-top: 0.2%;
-  margin-bottom: 4em;
+  margin: auto auto 4em auto;
   position: sticky;
-  top: 9.3%;
+  top: 9.5%;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -190,7 +188,11 @@ main {
 
 .content:hover {
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.intro {
+  margin-top: 3.2%;
 }
 
 h1 {
@@ -203,6 +205,7 @@ h1 {
 
 iframe {
   padding: 2% 0% 3% 0%;
+  max-height: 100%;
 }
 
 .column1, .column2 {
@@ -229,7 +232,7 @@ iframe {
   clear:both;
 }
 
-.about {
+.about, .contact {
   margin-top: 12em;
 }
 
@@ -290,15 +293,80 @@ p a:hover {
   color: #635E5E;
 }
 
+#form {
+  display: block;
+  clear:both;
+}
+
+#contactinfo {
+  margin-top: 32em;
+}
+
+#address {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+  margin-right: 1.3em;
+}
+
+table {
+  font-size: 0.9em;
+  width: 100%;
+}
+
+th, td {
+  padding: 1% 0%;
+}
+
+label {
+  text-align: left;
+}
+
+input[type=text] {
+  width: 100%;
+  border: 1px solid #635E5E;
+  border-radius: 5px;
+  height: 5%;
+  padding: 0.8em;
+}
+
+input[type=submit] {
+  margin-right: 50%;
+  margin-left: 50%;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  height: 12em;
+  padding: 0.8em;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  border: 1px solid #9BE4FF;
+  background-color: rgba(155, 228, 255, 0.1);
+}
+
+footer {
+  bottom: 0;
+  opacity: 0.7;
+  background-color: #2bb7ec;
+  padding: 2em 0em 2em 0em;
+  margin-top: 6em;
+}
+
 footer p {
   text-align: center;
   font-size: 0.85em;
-  color: #635E5E
+  color: #083E4A;
+  margin: 0.5% 0% 0% 0%;
 }
 
 footer a {
   text-decoration: none;
-  color: #F56424;
+  color: #fff;
   padding: 0em 1em;
 }
 
