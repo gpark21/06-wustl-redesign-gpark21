@@ -254,7 +254,7 @@ ol {
 
 ol li {
   border-top: 2px solid #635E5E;
-  padding: 0.5%;
+  padding: 1.2%;
 }
 
 ol a {
@@ -275,7 +275,7 @@ h2 {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
   color: #686868;
 }
 
