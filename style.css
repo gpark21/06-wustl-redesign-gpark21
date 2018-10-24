@@ -464,6 +464,14 @@ footer hr {
     font-size: 0.9em;
   }
 
+  .dropdown-content {
+    width: 50%;
+  }
+
+  .dropdown-content ul {
+    margin-left: -10px; 
+  }
+
   .column1 {
     display: none;
   }
