@@ -182,7 +182,7 @@ main {
 .content {
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 60%;
+  width: 70%;
   margin: auto;
   padding-bottom: 10em;
 }
@@ -243,6 +243,10 @@ iframe {
 
 #contactinfo {
   margin-top: 19em;
+}
+
+.mobilelink {
+  display: none;
 }
 
 strong {
@@ -318,7 +322,7 @@ p a:hover {
   clear:both;
 }
 
-#address {
+.address {
   text-align: right;
   font-style: italic;
   font-size: 0.9em;
@@ -397,9 +401,10 @@ footer hr {
 }
 
 
-@media screen and (max-width: 1024px) and (min-width: 800px) {
+@media screen and (max-width: 1024px) {
   #samfoxlogo {
     top: 7.8%;
+    width: 90%;
   }
 
   .content {
@@ -408,9 +413,17 @@ footer hr {
     padding: 0;
   }
 
+  #applyinfo {
+    margin-top: 40em;
+  }
+
+  #contactinfo {
+    margin-top: 5em;
+  }
+
   .column1 {
     width: 35%;
-    margin-top: 20.5%;
+    margin-top: 12em;
     padding: 5%;
   }
 
@@ -418,6 +431,10 @@ footer hr {
     float:none;
     width: 45%;
     padding: 5%;
+  }
+
+  .column1, .column2 {
+    vertical-align: top;
   }
 
   #aboutlinks {
@@ -429,7 +446,7 @@ footer hr {
   }
 
   nav ul li {
-    font-size: 0.8em;
+    padding: 0% 3%;
   }
 
   iframe {
@@ -438,6 +455,41 @@ footer hr {
   }
 }
 
-@media screen and (max-width: 799px) {
-  
+@media screen and (max-width: 600px) {
+  #samfoxlogo {
+    width: 97%;
+  }
+
+  nav ul li {
+    font-size: 0.9em;
+  }
+
+  .column1 {
+    display: none;
+  }
+
+  .column2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mobilelink {
+    display: block;
+    width: 70%;
+    margin: 6% 0% 0% 0%;
+    text-align: left;
+  }
+
+  #mobileapply, #mobilecontact {
+    width: 90%;
+    margin: auto;
+  }
+
+  #mobilecontact {
+    margin-left: 12.5%;
+  }
+
+  table {
+    margin-left: 9%;
+  }
 }
