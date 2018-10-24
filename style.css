@@ -198,14 +198,9 @@ main {
   margin-top: 3.2%;
 }
 
-#aboutdirect {
+iframe {
   width: 640px;
   height: 360px;
-}
-
-#applyvid {
-  height: 315px;
-  width: 560px;
 }
 
 .hideme {
@@ -217,7 +212,7 @@ h1 {
   color: #F56424;
   z-index: 2;
   margin: auto;
-  font-style: oblique;
+  font-style: italic;
 }
 
 iframe {
@@ -456,12 +451,12 @@ footer hr {
     vertical-align: top;
   }
 
-  #aboutlinks {
-    margin: 0;
+  .contact {
+    margin-top: 15em !important;
   }
 
-  .apply iframe {
-    width: 100%;
+  #aboutlinks {
+    margin: 0;
   }
 
   nav ul li {
@@ -474,6 +469,7 @@ footer hr {
   }
 
   #applyvid {
+    width: 100% !important; 
     margin-right: 10%;
   }
 }
@@ -485,8 +481,8 @@ footer hr {
 
   nav ul li {
     font-size: 0.9em;
-    padding: 0% 0.5%;
-    margin-right: 2%;
+    padding: 0% 2%;
+    margin:auto;
   }
 
   .dropdown-content {
@@ -506,6 +502,11 @@ footer hr {
     margin: auto;
   }
 
+  #aboutdirect {
+    padding: 0;
+    margin-top: -4em;
+  }
+
   .mobilelink {
     display: block;
     width: 70%;
@@ -519,7 +520,7 @@ footer hr {
   }
 
   #mobilecontact {
-    margin-right: -0.75em;   
+    margin-right: -0.75em;
   }
 
   #form {
